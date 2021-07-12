@@ -51,4 +51,17 @@ public class UserValidationImpl implements UserValidationService {
 			System.out.println("Phone number is invalid");
 		}	
 	}
+	@Override
+	public void checkPassword(String password) {
+	
+		boolean IsMatched = Pattern.compile("[A-Za-z0-9]{8,}").matcher(password).matches();
+		if(IsMatched)
+		{
+			System.out.println("Password is correct");
+		}
+		else 
+		{
+			System.out.println("Password is invalid");
+		}
+	}
 }

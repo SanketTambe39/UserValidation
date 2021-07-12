@@ -6,6 +6,7 @@ public class User {
 	private String lastName;
 	private String email;
 	private String mobileNumber;
+	private String password;
 	public String getFirstName() {
 		return firstName;
 	}
@@ -30,11 +31,19 @@ public class User {
 	public void setMobileNumber(String mobileNumber) {
 		this.mobileNumber = mobileNumber;
 	}
+	
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
 	@Override
 	public String toString() {
 		return "User [firstName=" + firstName + ", lastName=" + lastName + ", email=" + email + ", mobileNumber="
-				+ mobileNumber + "]";
+				+ mobileNumber + ", password=" + password + "]";
 	}
+	
 	
 	
 }
